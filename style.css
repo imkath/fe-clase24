@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  background-color: #222222;
+  height: 20px;
+}
+header .top a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+header .top .options select {
+  border: 0;
+  background-color: #222222;
+  color: white;
+}
+header .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background-color: #f0a83e;
+  height: 62px;
+}
+header .bottom button {
+  background-color: transparent;
+  border: 0;
+}
+header .bottom button i.fa-sharp.fa-solid.fa-bars {
+  color: white;
+  font-size: 1.5rem;
+}
+header .bottom nav {
+  display: none;
+}
+header .bottom nav .nav {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header .bottom nav .nav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+main section.hero {
+  background-image: url("./img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 409px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main section.hero .card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main section.hero .card p.welcome {
+  background-color: white;
+  padding: 0.5rem;
+  font-size: 30px;
+}
+main section.hero .card a {
+  text-decoration: none;
+  text-align: center;
+  background-color: #f0a83e;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+main section.featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+main section.featured .title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 40px;
+}
+main section.featured .title img {
+  width: 67px;
+  height: 71px;
+}
+main section.featured nav ul.nav {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main section.featured nav ul.nav li a {
+  text-decoration: none;
+  color: #666666;
+}
+main section.featured .products {
+  padding: 0;
+  margin: 3rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main section.featured .products li {
+  width: 265px;
+  text-align: center;
+  background-color: #fbfaf6;
+  padding-bottom: 1rem;
+  font-size: 15px;
+}
+main section.featured .products li .name {
+  font-weight: 500;
+  color: #3c2313;
+}
+main section.featured .products li .price {
+  font-weight: 500;
+  color: #f0a83e;
+}
+main section.contact {
+  margin: 3rem 0;
+}
+main section.contact h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #3c2313;
+  text-align: center;
+}
+main section.contact form {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  max-width: 450px;
+}
+main section.contact form input {
+  width: 100%;
+  height: 40px;
+  padding: 0 1rem;
+  background-color: #3c2313;
+  border-radius: 15px;
+}
+main section.contact form input::-moz-placeholder {
+  color: white;
+}
+main section.contact form input:-ms-input-placeholder {
+  color: white;
+}
+main section.contact form input::placeholder {
+  color: white;
+}
+main section.contact form .buttons button[type=reset] {
+  border: 0;
+  width: 110px;
+  height: 34px;
+  border-radius: 15px;
+  color: white;
+  background-color: #8a8787;
+}
+main section.contact form .buttons button[type=submit] {
+  border: 0;
+  width: 110px;
+  height: 34px;
+  border-radius: 15px;
+  color: white;
+  background-color: #f0a83e;
+}
+
+footer .suscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #f0a83e;
+}
+footer .suscribe .suscribe-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+footer .suscribe form.suscribe-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  max-width: 310px;
+}
+footer .suscribe form.suscribe-right input {
+  border: 0;
+  width: 70%;
+  height: 40px;
+  border-radius: 15px;
+}
+footer .suscribe form.suscribe-right button {
+  width: 30%;
+  height: 34px;
+  background-color: #3c2313;
+  color: white;
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 9px;
+}
+footer .bottom {
+  background-color: #3c2313;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+footer .bottom .info {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+footer .bottom .info li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .bottom .info li .icon {
+  background-color: #8a8787;
+  border: 5px solid #786960;
+  width: 66px;
+  height: 66px;
+  padding: 10px;
+  border-radius: 50%;
+}
+footer .bottom .info li .icon img {
+  width: 100%;
+  /* height: auto; */
+}
+footer .bottom .info li .text {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+footer .bottom .info li .text a {
+  text-decoration: none;
+  font-size: 10px;
+  color: #8a8787;
+}
+footer .bottom img {
+  width: 166px;
+  height: auto;
+}
+footer .rights {
+  background-color: #222222;
+  color: white;
+}
+footer .rights p {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  header .bottom button {
+    display: none;
+  }
+  header .bottom nav {
+    display: block;
+  }
+  footer .bottom {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
